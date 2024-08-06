@@ -1,0 +1,17 @@
+
+1. **Create GitHub Secrets**:
+   - Go to your repository on GitHub.
+   - Navigate to `Settings` > `Secrets` > `New repository secret`.
+   - Add secrets `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+
+2. **Add YAML Configuration**:
+   - Create a file `.github/workflows/terraform.yml` in your repository.
+   - Paste the YAML configuration content into this file.
+
+3. **Add Terraform Configuration**:
+   - Create a file `main.tf` in the root of your repository.
+   - Paste the Terraform configuration content into this file.
+
+4. **Commit and Push**:
+   - Commit and push your changes to the `main` branch.
+   - The GitHub Actions workflow will automatically run and deploy the infrastructure using Terraform.
